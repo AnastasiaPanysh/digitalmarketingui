@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-family: 'Oswald', 'Roboto';
+    font-weight: 400;
+}
+
+$color-body: #F5F5F5;
+$color-button:#0057FF;
+$color-font: #000000;
+
+body {
+    background-color: $color-body;
+    margin: auto;
+    max-width: 1120px;
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 1120px;
+        align-items: center;
+        top: 0;
+        padding: 15px 0;
+        background-color: #F5F5F5;
+        z-index: 1;
+
+        .img-logo {
+            background-image: url(./assets/image\ \(2\).svg);
+            width: 95px;
+            height: 35px;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 40px;
+
+            ul {
+                display: flex;
+
+                li {
+                    list-style-type: none;
+                }
+
+                li:not(:last-child) {
+                    margin-right: 35px;
+                }
+
+                li:hover {
+                    color: $color-button;
+                }
+            }
+        }
+
+        .logo-btn {
+            background: #0057FF;
+            border-radius: 30px;
+            width: 150px;
+            height: 35px;
+            font: 400 14px 'Oswald';
+            padding-top: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+    }
+
+    main {
+        display: flex;
+
+        .left-side {
+            width: 50%;
+
+
+            .left-side-img {
+                background-image: url(./assets/image\ \(1\).svg);
+                width: 550px;
+                height: 600px;
+                background-repeat: no-repeat;
+                margin: 100px auto auto auto;
+            }
+        }
+
+        .rigth-side {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font: 400 40px 'Oswald';
+                text-transform: uppercase;
+                color: #000000;
+                margin: 100px 0 0 120px;
+            }
+
+            p {
+                font: 400 15px 'Roboto';
+                color: #000000;
+                margin: 50px 0 0 120px;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                background: #FFFFFF;
+                border: 1px solid #E7E7E7;
+                border-radius: 20px;
+                  }
+        }
+
+    }
+}
