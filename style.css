@@ -6,6 +6,27 @@
   font-weight: 400;
 }
 
+body main .rigth-side .info .support .img-plus,
+body main .rigth-side .info .hosting .img-plus,
+body main .rigth-side .info .questions .img-plus,
+body main .rigth-side .info .policy .img-plus {
+  background-image: url(./assets/image\ \(3\).svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-top: 32px;
+}
+
+body main .rigth-side .info .support p,
+body main .rigth-side .info .hosting p,
+body main .rigth-side .info .questions p,
+body main .rigth-side .info .policy p {
+  font: 400 16px "Oswald";
+  text-transform: uppercase;
+  color: #000000;
+  margin: 30px 80px 30px 40px;
+}
+
 body {
   background-color: #F5F5F5;
   margin: auto;
@@ -115,4 +136,17 @@ body main .rigth-side .info {
   background: #FFFFFF;
   border: 1px solid #E7E7E7;
   border-radius: 20px;
+  margin: 50px 0 0 120px;
+}
+body main .rigth-side .info .support,
+body main .rigth-side .info .hosting,
+body main .rigth-side .info .questions,
+body main .rigth-side .info .policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
