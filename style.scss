@@ -10,14 +10,13 @@ $color-body: #F5F5F5;
 $color-button:#0057FF;
 $color-font: #000000;
 
-%img-plus {
+%img-plus-all {
     position: absolute;
     background-image: url(./assets/image\ \(3\).svg);
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
     margin: 32px auto auto 350px;
-
 }
 
 %info-p {
@@ -139,11 +138,21 @@ body {
                     p {
                         @extend %info-p
                     }
+                    .information{
+                        margin: 0 80px 0 40px;
 
-                    .img-plus {
-                        @extend %img-plus
                     }
+                    .img-plus{
+                        @extend %img-plus-all
+                    }
+                    .column-inf{
+                        display: flex;
+                        flex-direction: column;
+                    }
+
                 }
+
+                
             }
         }
 
