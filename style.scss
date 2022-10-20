@@ -10,6 +10,23 @@ $color-body: #F5F5F5;
 $color-button:#0057FF;
 $color-font: #000000;
 
+%img-plus {
+    position: absolute;
+    background-image: url(./assets/image\ \(3\).svg);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    margin: 32px auto auto 350px;
+
+}
+
+%info-p {
+    font: 400 16px 'Oswald';
+    text-transform: uppercase;
+    color: #000000;
+    margin: 30px 80px 30px 40px;
+}
+
 body {
     background-color: $color-body;
     margin: auto;
@@ -110,7 +127,24 @@ body {
                 background: #FFFFFF;
                 border: 1px solid #E7E7E7;
                 border-radius: 20px;
-                  }
+                margin: 50px 0 30px 120px;
+
+                .support,
+                .hosting,
+                .questions,
+                .policy {
+                    display: flex;
+                    flex-direction: row;
+
+                    p {
+                        @extend %info-p
+                    }
+
+                    .img-plus {
+                        @extend %img-plus
+                    }
+                }
+            }
         }
 
     }
