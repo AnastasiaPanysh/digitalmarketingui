@@ -4,20 +4,21 @@ class Client {
     }
 
     getMoreInfo() {
-        const plus = document.querySelector('.img-plus');
-        const information =document.querySelector('.information');
+        const plus = document.querySelectorAll('.img-plus');
+        const information = document.querySelectorAll('.information');
 
-        plus.addEventListener('click', () => {
-            if (information.hidden) {
-                information.hidden = false;
-                plus.style = `background-image: url(./assets\/minus.svg); margin-top:40px;`;
+        for (let i = 0; i < plus.length; i++) {
+            plus[i].addEventListener('click', () => {
+                if (information[i].hidden) {
+                    information[i].hidden = false;
+                    plus[i].style = `background-image: url(./assets\/minus.svg); margin-top:40px;`;
+                } else {
+                    information[i].hidden = true;
+                    plus[i].style = `background-image: url(./assets\/image (3).svg);`;
+                }
 
-               
-            } else {
-                information.hidden = true;
-                plus.style = `background-image: url(./assets\/image (3).svg);`;
-            }
-        });        
+            });
+        }
     }
 }
 
